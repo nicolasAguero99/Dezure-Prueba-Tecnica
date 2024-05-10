@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prueba técnica Frontend/Full Stack Developer
 
-## Getting Started
+## Descripción de la Prueba
 
-First, run the development server:
+Desarrolla una pequeña aplicación web utilizando Next.js, Tailwind CSS y TypeScript que muestre la transcripción de una llamada telefónica en un componente que mapee cada mensaje tanto del agente como del usuario. La aplicación debe permitir al usuario hacer clic en cualquier parte de la transcripción y saltar automáticamente a esa parte específica del audio.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requisitos Técnicos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend:
+- Utiliza Next.js como framework de React.
+- Implementa la interfaz de usuario utilizando Tailwind CSS.
+- Utiliza TypeScript para mejorar la calidad y la legibilidad del código.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Componente de Transcripción:
+- Crea un componente que mapee cada mensaje (tanto del agente como del usuario) en la transcripción de la llamada.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Funcionalidad:
+- Muestra la transcripción de la llamada en un componente con mensajes separados para el agente y el usuario.
+- Reproduce el audio de la llamada.
+- Permite al usuario hacer clic en cualquier parte de la transcripción para saltar a esa parte del audio.
+- Proporciona controles de reproducción de audio básicos (reproducir, pausar, detener).
 
-## Learn More
+## Puntos Adicionales (Opcionales)
 
-To learn more about Next.js, take a look at the following resources:
+### Diseño Responsivo:
+- Haz que la aplicación sea completamente responsive para adaptarse a diferentes tamaños de pantalla.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Estilo y Animaciones:
+- Utiliza Tailwind CSS para estilizar la aplicación y agrega animaciones suaves para mejorar la experiencia del usuario.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Entrega
 
-## Deploy on Vercel
+- Sube el código fuente de tu proyecto a un repositorio en GitHub y comparte el enlace con nosotros.
+- Despliega la aplicación en Vercel y proporciona el enlace para que podamos probarla en línea.
+- Enviar los enlaces junto a tu CV al correo team@contactship.ai
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notas Finales
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Recuerda mantener un enfoque modular y escalable en tu código.
+- La claridad, la legibilidad y la eficiencia del código serán consideradas en la evaluación.
+- ¡Buena suerte y diviértete!
+
+## Referencia
+
+### Transcripción
+
+[
+ {
+ "content": "¡Hola! Soy Maria, asesora de admisiones de la Universidad Online. ¿En qué puedo ayudarte hoy?",
+ "role": "agent",
+ "start": 1.005,
+ "end": 6.331625
+ },
+ {
+ "content": "Hola María, ¿cómo estás? Estoy viendo en sus redes que estaban mostrando algunas licenciaturas, algo que tenga que ver con tecnología o podría contar un poquito más.",
+ "role": "user",
+ "start": 7.24,
+ "end": 15.562688
+ },
+ {
+ "content": "¡Hola! Estoy bien, gracias por preguntar. En la Universidad Online ofrecemos la Licenciatura en Desarrollo de Software, una excelente opción relacionada con tecnología. ¿Te gustaría saber más detalles sobre este programa?",
+ "role": "agent",
+ "start": 17.028,
+ "end": 29.02025
+ },
+ {
+ "content": "Sí, ¿cuál sería el el plan de estudio?",
+ "role": "user",
+ "start": 30.369999,
+ "end": 32.71
+ },
+ {
+ "content": "El plan de estudios de la Licenciatura en Desarrollo de Software incluye materias como programación, diseño web, bases de datos y desarrollo de aplicaciones. ¿Te gustaría conocer más detalles sobre las asignaturas y duración del programa?",
+ "role": "agent",
+ "start": 34.359,
+ "end": 47.744
+ },
+ {
+ "content": "No, me gustaría el precio nada más. Gracias.",
+ "role": "user",
+ "start": 49.14,
+ "end": 51.088
+ },
+ {
+ "content": "El precio de la Licenciatura en Desarrollo de Software es de 36 mensualidades de dos mil ochocientos pesos mexicanos. ¿Te gustaría saber más sobre los",
+ "role": "agent",
+ "start": 52.838,
+ "end": 61.523
+ }
+]
+
+### Link del audio
+
+[Ver archivo de audio](https://drive.google.com/file/d/1hZv0jO9QVLWPkpr0f2vt0oik22muwUtX/view?usp=sharing)
