@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect } from 'react' 
 import { shallow } from 'zustand/shallow'
 import WaveSurfer from 'wavesurfer.js'
 
